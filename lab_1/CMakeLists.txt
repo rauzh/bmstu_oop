@@ -26,24 +26,14 @@ add_executable(
         ${PROJECT_NAME}
         ${UI_DOMAIN}/main.cpp
         ${UI_DOMAIN}/mainwindow.cpp
-        ${UI_DOMAIN}/mainwindow.h
         ${UI_DOMAIN}/draw.cpp
-        ${UI_DOMAIN}/draw.h
         ${PROC_DOMAIN}/errors.cpp
-        ${PROC_DOMAIN}/errors.h
         ${PROC_DOMAIN}/figure/figure.cpp
-        ${PROC_DOMAIN}/figure/figure.h
-        ${PROC_DOMAIN}/figure/figure_actions.h
         ${PROC_DOMAIN}/bindings/binding.cpp
-        ${PROC_DOMAIN}/bindings/binding.h
-        ${PROC_DOMAIN}/bindings/bindings.h
         ${PROC_DOMAIN}/bindings/bindings.cpp
         ${PROC_DOMAIN}/points/points.cpp
         ${PROC_DOMAIN}/points/point.cpp
-        ${PROC_DOMAIN}/points/points.h
-        ${PROC_DOMAIN}/points/point.h
-        ${PROC_DOMAIN}/tasks.cpp
-        ${PROC_DOMAIN}/tasks.h)
+        ${PROC_DOMAIN}/tasks.cpp)
 
 if (NOT CMAKE_PREFIX_PATH)
     message(WARNING "CMAKE_PREFIX_PATH is not defined, you may need to set it "
